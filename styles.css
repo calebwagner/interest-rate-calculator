@@ -19,12 +19,12 @@ body {
 input[type="number"] {
     padding: 5px 10px;
     margin-right: 10px;
-    margin-bottom: 5px; /* added to stack inputs vertically on small screens */
+    margin-bottom: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    width: 100%; /* full width for mobile */
-    box-sizing: border-box; /* ensure padding and border are included in width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -35,9 +35,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    display: block; /* make the button full width */
-    width: 100%; /* full width for mobile */
-    margin-top: 20px; /* added some margin for clarity */
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -47,26 +47,24 @@ button:hover {
 #result {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 20px; /* added some margin for clarity */
+    margin-top: 20px;
 }
 
-/* Media queries for larger screens */
 @media screen and (min-width: 1100px) {
     input[type="number"] {
-        width: auto; /* back to auto width */
+        width: auto;
         margin-bottom: 0;
     }
     
     button {
         width: auto;
-        display: inline-block; /* no longer full width */
+        display: inline-block;
         margin-top: 0;
     }
 }
 
 .loanInput {
     opacity: 1;
-    max-height: 100px;  /* assuming this is the height of your input set */
     overflow: hidden;
     transition: opacity 0.5s, max-height 0.5s;
 }
