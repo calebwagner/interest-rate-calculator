@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Loan Interest Calculator</title>
+</head>
+<body>
+  <h1>Interest Rate Calculator</h1>
+<div id="loanInputsContainer">
+    <div class="loanInput">
+        Principal: <input type="number" class="principal">
+        Interest Rate: <input type="number" class="interest" step="0.01">
+        Months: <input type="number" class="months">
+        Interest: <span class="individualInterest">$0.00</span>
+    </div>
+</div>
+<button onclick="addLoanField()">Add Another Loan</button>
+
+
+<button onclick="calculateTotalInterest()">Calculate Total Interest</button>
+
+<div>
+    Total Interest: <span id="result">0.00</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
